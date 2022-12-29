@@ -1,0 +1,8 @@
+C:\Source\DevGrep\DevGrepActivationCode\bin\Debug\DevGrepActivationCode.exe.config
+C:\Source\DevGrep\DevGrepActivationCode\bin\Debug\DevGrepActivationCode.exe
+C:\Source\DevGrep\DevGrepActivationCode\bin\Debug\DevGrepActivationCode.pdb
+C:\Source\DevGrep\DevGrepActivationCode\obj\Debug\DevGrepActivationCode.Form1.resources
+C:\Source\DevGrep\DevGrepActivationCode\obj\Debug\DevGrepActivationCode.Properties.Resources.resources
+C:\Source\DevGrep\DevGrepActivationCode\obj\Debug\DevGrepActivationCode.csproj.GenerateResource.Cache
+C:\Source\DevGrep\DevGrepActivationCode\obj\Debug\DevGrepActivationCode.exe
+C:\Source\DevGrep\DevGrepActivationCode\obj\Debug\DevGrepActivationCode.pdb

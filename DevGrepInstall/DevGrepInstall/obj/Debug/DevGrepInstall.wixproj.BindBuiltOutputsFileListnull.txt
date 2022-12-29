@@ -1,0 +1,2 @@
+c:\source\DevGrep\DevGrepInstall\DevGrepInstall\bin\Debug\DevGrepInstall.msi
+c:\source\DevGrep\DevGrepInstall\DevGrepInstall\bin\Debug\DevGrepInstall.wixpdb

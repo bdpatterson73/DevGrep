@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DevGrep">
+</Property><Property Name="Solution File" Value="C:\Source\DevGrep\DevGrep.sln">
+</Property><Property Name="Date" Value="Tuesday, November 11, 2008">
+</Property><Property Name="Time" Value="21:51 PM">
+</Property></Properties><Event ErrorLevel="0" Project="DevGrep" Source="DevGrep\DevGrep.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DevGrep" Source="DevGrep\DevGrep.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RichTextBoxEx" Source="RichTextBoxEx\RichTextBoxEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RichTextBoxEx" Source="RichTextBoxEx\RichTextBoxEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DGTe" Source="DGTe\DGTe.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DGTe" Source="DGTe\DGTe.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="Patterson.Windows.Forms" Source="..\Patterson.Windows.Forms\Patterson.Windows.Forms.csproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="0" Project="" Source="DevGrep.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DevGrep.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DevGrep" Source="DevGrep\DevGrep.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RichTextBoxEx" Source="RichTextBoxEx\RichTextBoxEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DGTe" Source="DGTe\DGTe.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,12 @@
+C:\Source\DevGrep\UpdateCheck\bin\Debug\UpdateCheck.exe.config
+C:\Source\DevGrep\UpdateCheck\bin\Debug\UpdateCheck.exe
+C:\Source\DevGrep\UpdateCheck\bin\Debug\UpdateCheck.pdb
+C:\Source\DevGrep\UpdateCheck\bin\Debug\Ionic.Zip.dll
+C:\Source\DevGrep\UpdateCheck\bin\Debug\Ionic.Zip.pdb
+C:\Source\DevGrep\UpdateCheck\bin\Debug\Ionic.Zip.xml
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.csprojResolveAssemblyReference.cache
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.Form1.resources
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.Properties.Resources.resources
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.csproj.GenerateResource.Cache
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.exe
+C:\Source\DevGrep\UpdateCheck\obj\Debug\UpdateCheck.pdb

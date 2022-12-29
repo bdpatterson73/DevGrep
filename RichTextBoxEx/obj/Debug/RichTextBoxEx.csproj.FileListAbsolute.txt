@@ -1,0 +1,8 @@
+C:\Source\DevGrep\RichTextBoxEx\bin\Debug\RichTextBoxEx.dll
+C:\Source\DevGrep\RichTextBoxEx\bin\Debug\RichTextBoxEx.pdb
+C:\Source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.RichTextBoxEx.resources
+C:\Source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.csproj.GenerateResource.Cache
+C:\Source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.dll
+C:\Source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.pdb
+C:\source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.csproj.AssemblyReference.cache
+C:\source\DevGrep\RichTextBoxEx\obj\Debug\RichTextBoxEx.csproj.CoreCompileInputs.cache

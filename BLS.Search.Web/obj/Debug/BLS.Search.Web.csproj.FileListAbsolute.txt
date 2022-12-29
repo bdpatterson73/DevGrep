@@ -1,0 +1,7 @@
+C:\Source\DevGrep\BLS.Search.Web\bin\Debug\BLS.Search.Web.dll
+C:\Source\DevGrep\BLS.Search.Web\bin\Debug\BLS.Search.Web.pdb
+C:\Source\DevGrep\BLS.Search.Web\bin\Debug\BLS.JSON.dll
+C:\Source\DevGrep\BLS.Search.Web\bin\Debug\BLS.JSON.pdb
+C:\Source\DevGrep\BLS.Search.Web\obj\Debug\BLS.Search.Web.csprojResolveAssemblyReference.cache
+C:\Source\DevGrep\BLS.Search.Web\obj\Debug\BLS.Search.Web.dll
+C:\Source\DevGrep\BLS.Search.Web\obj\Debug\BLS.Search.Web.pdb

@@ -1,0 +1,15 @@
+using System.Reflection;
+using System.Runtime.InteropServices;
+[assembly : AssemblyTitle("DevGrep")]
+[assembly : AssemblyDescription("Programmers Grep Utility")]
+[assembly : AssemblyConfiguration("")]
+[assembly : AssemblyCompany("Brian D. Patterson")]
+[assembly : AssemblyProduct("DevGrep")]
+[assembly : AssemblyCopyright("Copyright 2005-2023 Brian D. Patterson")]
+[assembly : AssemblyTrademark("")]
+[assembly : AssemblyCulture("")]
+[assembly : ComVisible(false)]
+[assembly : AssemblyVersion("1.1.4.0")]
+[assembly : AssemblyDelaySign(false)]
+[assembly : AssemblyKeyFile("")]
+[assembly : AssemblyKeyName("")]

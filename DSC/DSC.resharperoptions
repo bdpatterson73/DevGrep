@@ -1,0 +1,11 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <RecentFilesTracker>
+    <RecentFilesTracker />
+  </RecentFilesTracker>
+  <CompletionStatisticsManager />
+</Configuration>

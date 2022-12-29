@@ -1,0 +1,5 @@
+C:\Source\DevGrep\BLS.TextEditor\Project\bin\Debug\BLS.TextEditor.dll
+C:\Source\DevGrep\BLS.TextEditor\Project\bin\Debug\BLS.TextEditor.pdb
+C:\Source\DevGrep\BLS.TextEditor\Project\obj\Debug\BLS.TextEditor.csprojResolveAssemblyReference.cache
+C:\Source\DevGrep\BLS.TextEditor\Project\obj\Debug\BLS.TextEditor.dll
+C:\Source\DevGrep\BLS.TextEditor\Project\obj\Debug\BLS.TextEditor.pdb

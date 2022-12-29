@@ -1,0 +1,6 @@
+obj\Debug\Product.wixobj
+c:\Source\DevGrep\DevGrepInstall\DevGrepInstall\bin\Debug\DevGrepInstall.wixpdb
+c:\source\DevGrep\DevGrepInstall\DevGrepInstall\bin\Debug\DevGrepInstall.msi
+obj\Debug\DevGrepInstall.wixproj.BindContentsFileListnull.txt
+obj\Debug\DevGrepInstall.wixproj.BindOutputsFileListnull.txt
+obj\Debug\DevGrepInstall.wixproj.BindBuiltOutputsFileListnull.txt

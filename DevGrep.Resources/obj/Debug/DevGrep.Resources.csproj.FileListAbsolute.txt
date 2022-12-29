@@ -1,0 +1,4 @@
+C:\Source\DevGrep\DevGrep.Resources\bin\Debug\DevGrepResources.dll
+C:\Source\DevGrep\DevGrep.Resources\bin\Debug\DevGrepResources.pdb
+C:\Source\DevGrep\DevGrep.Resources\obj\Debug\DevGrepResources.dll
+C:\Source\DevGrep\DevGrep.Resources\obj\Debug\DevGrepResources.pdb

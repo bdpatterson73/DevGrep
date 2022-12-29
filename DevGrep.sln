@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevGrep", "DevGrep\DevGrep.csproj", "{EE536E15-2E62-429F-B5D0-8C3348DAA705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBoxEx", "RichTextBoxEx\RichTextBoxEx.csproj", "{FB2115BE-6708-4DC3-8E12-4C41CFAA9A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGTe", "DGTe\DGTe.csproj", "{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE536E15-2E62-429F-B5D0-8C3348DAA705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE536E15-2E62-429F-B5D0-8C3348DAA705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE536E15-2E62-429F-B5D0-8C3348DAA705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE536E15-2E62-429F-B5D0-8C3348DAA705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2115BE-6708-4DC3-8E12-4C41CFAA9A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2115BE-6708-4DC3-8E12-4C41CFAA9A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2115BE-6708-4DC3-8E12-4C41CFAA9A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2115BE-6708-4DC3-8E12-4C41CFAA9A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SZOpenFile = false
+		SZOpenFolder = false
+		SZPath = C:\Source\DevGrep.zip
+		SZFullPathInfo = false
+		SZModifiedFiles = false
+		SZIncludeMisc = false
+		SolutionGuid = {DEFE674B-F6C7-47AB-BCD9-26EBDF70B706}
+	EndGlobalSection
+EndGlobal

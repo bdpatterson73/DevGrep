@@ -1,0 +1,9 @@
+C:\Source\DevGrep\DGTe\bin\Debug\DGTe.dll
+C:\Source\DevGrep\DGTe\bin\Debug\DGTe.pdb
+C:\Source\DevGrep\DGTe\obj\Debug\DGTe.frmMain.resources
+C:\Source\DevGrep\DGTe\obj\Debug\DGTe.csproj.GenerateResource.Cache
+C:\Source\DevGrep\DGTe\obj\Debug\DGTe.dll
+C:\Source\DevGrep\DGTe\obj\Debug\DGTe.pdb
+C:\source\DevGrep\DGTe\obj\Debug\DGTe.csproj.AssemblyReference.cache
+C:\source\DevGrep\DGTe\obj\Debug\DGTe.csproj.CoreCompileInputs.cache
+C:\source\DevGrep\DGTe\obj\Debug\DGTe.csproj.CopyComplete

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="*" Name="DevGrep" Language="1033" Version="1.8.5.0" Manufacturer="Borderline Software, Inc." UpgradeCode="1182aadc-f633-4c57-899c-9e37962693e8">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Manufacturer="Borderline Software, Inc." />
+		<!-- Let WiX know we will be using a User interface. Without the following line no UI is shown.. -->
+		<UIRef Id="WixUI_Advanced" />
+
+		<Icon Id="icon.ico" SourceFile="../../Obfuscated/app.ico"/>
+		<MajorUpgrade DowngradeErrorMessage="A newer version of DevGrep is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+		<!-- Properties needed for our Advanced UI so it nows what to populate in the dialogs... -->
+		<Property Id="ApplicationFolderName" Value="Borderline Software, Inc.\DevGrep" />
+		<Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+		<WixVariable Id="WixUILicenseRtf" Value="../../Obfuscated/license.rtf" />
+		<!-- Set the banner to use. It must be a size of 493x58 -->
+		<!--<WixVariable Id="WixUIBannerBmp" Value="myBanner.bmp" />-->
+
+		<!-- Set var to check for the .NET Framework 4.0-->
+		<PropertyRef Id="NETFRAMEWORK40FULL"/>
+
+		<Feature Id="ProductFeature" Title="DevGrep" Level="1" Description="Contains all the core files for DevGrep.">
+			<ComponentGroupRef Id="ProductComponents"  />
+			<ComponentGroupRef Id="TemplateComponents" />
+			<ComponentGroupRef Id="ThemesComponents" />
+			<ComponentGroupRef Id="ShortcutComponents" />
+		</Feature>
+		<Feature Id="ContextMenuFeature" Title="Context Menu Integration" Level="1" Description="Add Windows right click integration for DevGrep.">
+			<ComponentGroupRef Id="ShellContextComponents" />
+		</Feature>
+
+		<!-- Block the install if the correct version of the .NET Framework isn't installed-->
+		<Condition Message="This application requires .NET Framework 4.0. Please install the .NET Framework then run this installer again.">
+			<![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+		</Condition>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="COMPANYFOLDER" Name="Borderline Software, Inc.">
+					<Directory Id="APPLICATIONFOLDER" Name="DevGrep">
+						<Directory Id="TEMPLATESFOLDER" Name="Templates"/>
+						<Directory Id="THEMESFOLDER" Name="Themes"/>
+					</Directory>
+				</Directory>
+			</Directory>
+			<Directory Id="ProgramMenuFolder">
+				<Directory Id="MyShortCutsDir" Name="DevGrep" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="APPLICATIONFOLDER">
+			<Component Id="CMP_DEVGREPEXE" Guid="9F0FCDE8-6767-401D-B6CC-CC1897CB62E8" >
+				<File Id="FILE_DEVGREPEXE" Source="../../Obfuscated/DevGrep.exe" Name="DevGrep.exe" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_DEVGREPICON" Guid="F48B1FF1-ECDF-46C9-AE89-6FADA5B0E2A2" >
+				<File Id="FILE_DEVGREPICON" Source="../../Obfuscated/app.ico" Name="app.ico" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_DEVGREPEXECONFIG" Guid="EE610248-BF48-4613-9C94-1EC6DF934BC7">
+				<File Id="FILE_DEVGREPEXECONFIG" Source="../../Obfuscated/DevGrep.exe.Config" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_BLSJSONDLL" Guid="8A82FE58-5E17-4DE9-87F4-BC7D294C2956">
+				<File Id="FILE_BLSJSONDLL" Source="../../Obfuscated/BLS.JSON.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_BLSSEARCHWEBDLL" Guid="E253763E-3E87-44CD-975F-FF4064776941">
+				<File Id="FILE_BLSSEARCHWEBDLL" Source="../../Obfuscated/BLS.Search.Web.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_DEVGREPRESOURCESDLL" Guid="EF634059-48F7-46C7-B573-448A0E4E1C06">
+				<File Id="FILE_DEVGREPRESOURCESDLL" Source="../../Obfuscated/DevGrepResources.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_DGTEDLL" Guid="97EFE08A-D7B6-4733-B88B-FAD44154FA37">
+				<File Id="FILE_DGTEDLL" Source="../../Obfuscated/DGTe.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_PATTERSONWINDOWSFORMSDLL" Guid="A9CFD0DC-7EF2-46FC-B927-BDFB5D167F18">
+				<File Id="FILE_PATTERSONWINDOWSFORMSDLL" Source="../../Obfuscated/Patterson.Windows.Forms.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_RICHTEXTBOXEXDLL" Guid="7B4C8CC3-A285-4D90-A125-5A710BF8C40A">
+				<File Id="FILE_RICHTEXTBOXEXDLL" Source="../../Obfuscated/RichTextBoxEx.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_SMARTSEARCHDLL" Guid="DBA24CF9-90BD-40BC-9956-88D6B9E0BA7A">
+				<File Id="FILE_SMARTSEARCHDLL" Source="../../Obfuscated/SmartSearch.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_UPDATECHECKEXE" Guid="543341A4-D95C-43D2-98FF-1D19E7AF6FB8">
+				<File Id="FILE_UPDATECHECKEXE" Source="../../Obfuscated/UpdateCheck.exe" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_BLSTEXTEDITORDLL" Guid="2304521C-6697-401D-A129-114ED822B404">
+				<File Id="FILE_BLSTEXTEDITORDLL" Source="../../Obfuscated/BLS.TextEditor.dll" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<ComponentGroup Id="ShortcutComponents" Directory="MyShortCutsDir">
+			<Component Id="CMP_DevGrepShortcut" Guid="C5871C10-4FC9-407F-8FA4-78F926646813">
+				<Shortcut Id="DevGrepStartMenuShortcut" Name="DevGrep" Description="DevGrep Search" Target="[APPLICATIONFOLDER]DevGrep.exe" Icon="icon.ico" />
+				<Shortcut Id="UninstallShortcut" Name="Uninstall DevGrep" Description="Uninstalls DevGrep and all of its components" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]" />
+				<RemoveFolder Id="RemoveMyShortcutsDir" On="uninstall" />
+				<RegistryValue Root="HKCU" Key="Software\Borderline Software, Inc.\DevGrep" Name="MainShortcutInstalled" Type="integer" Value="1" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<ComponentGroup Id="TemplateComponents" Directory="TEMPLATESFOLDER">
+			<Component Id="CMP_RESULTSHTML" Guid="0B680E08-125F-48A1-ADCD-BDB15F4D8FEC">
+				<File Id="FILE_RESULTSHTML" Source="../../Obfuscated/Templates/Results.html" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_RESULTSCOMPILEDHTML" Guid="F12182E2-FA6D-4F72-9A8C-3265CF99171A">
+				<File Id="FILE_RESULTSCOMPILEDHTML" Source="../../Obfuscated/Templates/ResultsCompiled.html" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<ComponentGroup Id="ThemesComponents" Directory="THEMESFOLDER">
+			<Component Id="CMP_SILVERBLACKXML" Guid="C0B6D4B5-04B6-4821-B800-11C5D0F724F9">
+				<File Id="FILE_SILVERBLACKXML" Source="../../Obfuscated/Themes/SilverBlack.xml" KeyPath="yes" />
+			</Component>
+			<Component Id="CMP_WINDEFAULTXML" Guid="2E6C70D9-4D19-4C50-B819-FAC9B51953D4">
+				<File Id="FILE_WINDEFAULTXML" Source="../../Obfuscated/Themes/WinDefault.xml" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<ComponentGroup Id="ShellContextComponents" Directory="APPLICATIONFOLDER">
+			<!-- Register directory Search Context Menu-->
+			<Component Id="CMP_WriteDevGrepSearchDir" Guid="10F2B047-C386-40A9-B261-258BCAE4B781">
+				<RegistryValue Id="DevGrepSearchDirDefault" KeyPath="yes" Action="write" Root="HKCR" Key="Directory\shell\DevGrepSearch" Value="DevGrep Search" Type="string" />
+			</Component>
+			<Component Id="CMP_WriteDevGrepSearchDirCmd" Guid="731D2BD2-3EDE-4366-BBA8-C333A64B2C23">
+				<RegistryValue Id="DevGrepSearchDirCmd" KeyPath="yes" Action="write" Root="HKCR" Key="Directory\shell\DevGrepSearch\command" Value="[APPLICATIONFOLDER]DevGrep.exe /search %1" Type="string" />
+			</Component>
+			<!-- Register folder search context menu-->
+			<Component Id="CMP_WriteDevGrepSearchDrive" Guid="717984B9-660A-4716-BC31-1B92BCDA558C">
+				<RegistryValue Id="DevGrepSearchDriveDefault" KeyPath="yes" Action="write" Root="HKCR" Key="Drive\shell\DevGrepSearch" Value="DevGrep Search" Type="string" />
+			</Component>
+			<Component Id="CMP_WriteDevGrepSearchDriveCmd" Guid="61E60628-989F-4832-ADC0-823216E6934A">
+				<RegistryValue Id="DevGrepSearchDriveCmd" KeyPath="yes" Action="write" Root="HKCR" Key="Drive\shell\DevGrepSearch\command" Value="[APPLICATIONFOLDER]DevGrep.exe /search %1" Type="string" />
+			</Component>
+			<!-- Register the DevGrep extension for saved searches -->
+			<Component Id="CMP_WriteDevGrepExt" Guid="AFCB2190-3BAB-43BB-9CF3-AFE079344136">
+				<RegistryValue Id="WriteDevGrepExt" KeyPath="yes" Action="write" Root="HKCR" Key=".dgb" Value="DevGrep.Document" Type="string" />
+			</Component>
+			<Component Id="CMP_WriteDevGrepExtDesc" Guid="6DCDE6F6-94D5-4528-8946-829B4164472C">
+				<RegistryValue Id="WriteDevGrepExtDesc" KeyPath="yes" Action="write" Root="HKCR" Key="DevGrep.Document" Value="DevGrep Search" Type="string" />
+			</Component>
+			<Component Id="CMP_WriteDevGrepExtIcon" Guid="E723C11D-FB58-4969-8658-368C4955AE99">
+				<RegistryValue Id="WriteDevGrepExtIcon" KeyPath="yes" Action="write" Root="HKCR" Key="DevGrep.Document\DefaultIcon" Value="[APPLICATIONFOLDER]app.ico" Type="string" />
+			</Component>
+			<Component Id="CMP_WriteDevGrepExtLaunch" Guid="E4B56B7F-F616-4C07-A227-2900872D0345">
+				<RegistryValue Id="WriteDevGrepExtLaunch" KeyPath="yes" Action="write" Root="HKCR" Key="DevGrep.Document\shell\open\command" Value="[APPLICATIONFOLDER]DevGrep.exe %1" Type="string" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

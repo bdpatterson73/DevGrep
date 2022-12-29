@@ -1,0 +1,7 @@
+C:\source\DevGrep\DGTe\bin\Release\DGTe.dll
+C:\source\DevGrep\DGTe\obj\Release\DGTe.csproj.AssemblyReference.cache
+C:\source\DevGrep\DGTe\obj\Release\DGTe.frmMain.resources
+C:\source\DevGrep\DGTe\obj\Release\DGTe.csproj.GenerateResource.cache
+C:\source\DevGrep\DGTe\obj\Release\DGTe.csproj.CoreCompileInputs.cache
+C:\source\DevGrep\DGTe\obj\Release\DGTe.csproj.CopyComplete
+C:\source\DevGrep\DGTe\obj\Release\DGTe.dll

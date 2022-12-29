@@ -1,0 +1,187 @@
+<Configuration>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\source\DevGrep\DevGrep\frmMain.cs" offset="109025" line="646" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Classes\TaskbarNotifier.cs" offset="8546" line="429" column="0" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Controls\DBTreeBrowser.cs" offset="0" line="56" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Classes\Misc\DefaultEntries.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Classes\RegExTreeItem.cs" offset="0" line="49" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Classes\Registry\Win32Registry.cs" offset="0" line="31" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Classes\Shell.cs" offset="0" line="6" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Forms\frmSQLLogin.cs" offset="0" line="0" column="46" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Classes\ConnectionStringParse.cs" offset="0" line="40" column="0" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Classes\DatabaseTreeNode.cs" offset="0" line="63" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Forms\frmDBSeartchAssist.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Controls\TriStateTreeView.cs" offset="11200" line="269" column="0" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Classes\Database\CDb.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\source\Patterson.Windows.Forms\Controls\NameValueGrid.cs" offset="96" line="-1" column="-1" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Forms\frmRegExBuild.cs" offset="9308" line="47" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DGTe\frmMain.cs" offset="31215" line="206" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Forms\frmExportFields.cs" offset="0" line="80" column="0" />
+      <TrackedFile location="C:\source\DevGrep\DevGrep\Forms\frmSearchAssist.cs" offset="0" line="172" column="31" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.Runtime">
+      <Item value="InteropServices" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms">
+      <Item value="Control" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows">
+      <Item value="Forms" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.MenuItem">
+      <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Patterson.Windows.Forms.Classes.DatabaseTreeNode.DBNodeType">
+      <Item value="Server" priority="0" />
+      <Item value="Root" priority="0" />
+      <Item value="Database" priority="0" />
+      <Item value="Views" priority="0" />
+      <Item value="SPROC" priority="0" />
+      <Item value="Tables" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.Classes.RegExTreeItem">
+      <Item value="EntryName" priority="1" />
+      <Item value="HashCode" priority="2" />
+      <Item value="EntryType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ICSharpCode.TextEditor.TextAreaControl">
+      <Item value="Caret" priority="1" />
+      <Item value="Document" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView.ListViewItemCollection">
+      <Item value="Add" priority="0" />
+      <Item value="Remove" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeView">
+      <Item value="Nodes" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="SelectedItems" priority="1" />
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="GetFileSystemInfos" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RadioButton">
+      <Item value="Checked" priority="1" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="ToString" priority="0" />
+      <Item value="Append" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Patterson.Windows.Forms.Controls.DBTreeBrowser">
+      <Item value="RefreshValues" priority="0" />
+      <Item value="ConnectionStrings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeNodeCollection">
+      <Item value="Clear" priority="0" />
+      <Item value="Add" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="EndInvoke" priority="0" />
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.DataSets.dsRegEx">
+      <Item value="ReadXml" priority="0" />
+      <Item value="WriteXml" priority="0" />
+      <Item value="Tables" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolBarButton">
+      <Item value="ToolTipText" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.CancelEventArgs">
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Patterson.Windows.Forms.Classes.DatabaseTreeNode">
+      <Item value="NodeType" priority="3" />
+      <Item value="Collapse" priority="0" />
+      <Item value="Text" priority="3" />
+      <Item value="ConnectionString" priority="3" />
+      <Item value="Nodes" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+      <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Split" priority="1" />
+      <Item value="ToUpper" priority="3" />
+      <Item value="Replace" priority="0" />
+      <Item value="Length" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Patterson.Windows.Forms.Classes.ConnectionStringParse">
+      <Item value="Server" priority="0" />
+      <Item value="Database" priority="0" />
+      <Item value="ConnectionString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ICSharpCode.TextEditor.Document.IHighlightingStrategy">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.Forms.frmRegExBuild">
+      <Item value="ShowDialog" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.Forms.frmDBSeartchAssist">
+      <Item value="ShowDialog" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ICSharpCode.TextEditor.TextEditorControl">
+      <Item value="PrintDocument" priority="1" />
+      <Item value="ActiveTextAreaControl" priority="6" />
+      <Item value="SaveFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolBarButtonClickEventArgs">
+      <Item value="Button" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.Classes.TaskbarNotifier">
+      <Item value="ContentClick" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Printing.PrintDocument">
+      <Item value="Print" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView.SelectedListViewItemCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.PrintPreviewDialog">
+      <Item value="Document" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System">
+      <Item value="Windows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DialogResult">
+      <Item value="Yes" priority="0" />
+      <Item value="Cancel" priority="1" />
+      <Item value="OK" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ICSharpCode.TextEditor.Document.IDocument">
+      <Item value="DocumentChanged" priority="0" />
+      <Item value="TextContentChanged" priority="0" />
+      <Item value="HighlightingStrategy" priority="0" />
+      <Item value="UpdateCommited" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ICSharpCode.TextEditor.Caret">
+      <Item value="Column" priority="0" />
+      <Item value="Line" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevGrep.Forms.frmSQLLogin">
+      <Item value="DialogResult" priority="0" />
+      <Item value="ConnectionString" priority="1" />
+      <Item value="ShowDialog" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+</Configuration>

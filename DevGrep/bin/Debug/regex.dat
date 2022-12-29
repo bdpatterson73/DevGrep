@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<dsRegEx xmlns="http://tempuri.org/dsRegEx.xsd">
+  <xs:schema id="dsRegEx" targetNamespace="http://tempuri.org/dsRegEx.xsd" xmlns:mstns="http://tempuri.org/dsRegEx.xsd" xmlns="http://tempuri.org/dsRegEx.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsRegEx" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="ExpressionData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="EntryType" type="xs:string" minOccurs="0" />
+                <xs:element name="EntryName" type="xs:string" minOccurs="0" />
+                <xs:element name="EntryText" type="xs:string" minOccurs="0" />
+                <xs:element name="HashCode" type="xs:string" minOccurs="0" />
+                <xs:element name="ParentHash" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ExpressionData>
+    <EntryType>Folder</EntryType>
+    <EntryName>Date/Time</EntryName>
+    <HashCode>8C54917613AF532F4E6F4481DA73748C</HashCode>
+    <ParentHash>B3BC107C278BE240A1991BE80CD73168</ParentHash>
+  </ExpressionData>
+  <ExpressionData>
+    <EntryType>RegEx</EntryType>
+    <EntryName>Valid Date</EntryName>
+    <EntryText>(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d</EntryText>
+    <ParentHash>8C54917613AF532F4E6F4481DA73748C</ParentHash>
+  </ExpressionData>
+</dsRegEx>

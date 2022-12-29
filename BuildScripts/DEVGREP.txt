@@ -1,0 +1,2 @@
+app|version|release date|url|file
+DevGrep|1.30|11/28/2011|http://www.borderlinesoftware.com/Software/Updates/DevGrep/|DevGrep1_2_0.zip

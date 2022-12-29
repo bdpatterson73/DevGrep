@@ -1,0 +1,5 @@
+C:\Source\DevGrep\BLS.JSON\obj\Debug\BLS.JSON.csprojResolveAssemblyReference.cache
+C:\Source\DevGrep\BLS.JSON\bin\Debug\BLS.JSON.dll
+C:\Source\DevGrep\BLS.JSON\bin\Debug\BLS.JSON.pdb
+C:\Source\DevGrep\BLS.JSON\obj\Debug\BLS.JSON.dll
+C:\Source\DevGrep\BLS.JSON\obj\Debug\BLS.JSON.pdb

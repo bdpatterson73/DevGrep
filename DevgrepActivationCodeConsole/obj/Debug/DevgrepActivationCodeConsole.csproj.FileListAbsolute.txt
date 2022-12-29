@@ -1,0 +1,6 @@
+C:\Source\DevGrep\DevgrepActivationCodeConsole\bin\Debug\DevgrepActivationCodeConsole.exe.config
+C:\Source\DevGrep\DevgrepActivationCodeConsole\bin\Debug\DevgrepActivationCodeConsole.exe
+C:\Source\DevGrep\DevgrepActivationCodeConsole\bin\Debug\DevgrepActivationCodeConsole.pdb
+C:\Source\DevGrep\DevgrepActivationCodeConsole\obj\Debug\DevgrepActivationCodeConsole.exe
+C:\Source\DevGrep\DevgrepActivationCodeConsole\obj\Debug\DevgrepActivationCodeConsole.pdb
+C:\Source\DevGrep\DevgrepActivationCodeConsole\obj\Debug\DevgrepActivationCodeConsole.csprojResolveAssemblyReference.cache

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsSavedFile" targetNamespace="http://tempuri.org/dsSavedFile.xsd" elementFormDefault="qualified"
+  attributeFormDefault="qualified" xmlns="http://tempuri.org/dsSavedFile.xsd" xmlns:mstns="http://tempuri.org/dsSavedFile.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="dsSavedFile" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="SavedSearch">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SearchString" type="xs:string" minOccurs="0" />
+              <xs:element name="SearchPath" type="xs:string" minOccurs="0" />
+              <xs:element name="IncludeSub" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+              <xs:element name="ReplaceString" type="xs:string" minOccurs="0" />
+              <xs:element name="DoReplace" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DoSearch" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CaseSensative" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WholeWordOnly" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

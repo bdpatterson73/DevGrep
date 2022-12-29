@@ -1,0 +1,40 @@
+<Configuration>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <Providers />
+  </UnitTestRunner>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+  </ReFormatCode>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <EditorManager>
+    <RecentFiles>
+      <File id="FB2115BE-6708-4DC3-8E12-4C41CFAA9A76/f:AssemblyInfo.cs" caret="620" scrollPosition="0|0" />
+      <File id="EE536E15-2E62-429F-B5D0-8C3348DAA705/f:AssemblyInfo.cs" caret="349" scrollPosition="0|0" />
+      <File id="EE536E15-2E62-429F-B5D0-8C3348DAA705/d:Forms/f:frmDBSeartchAssist.cs" caret="408" scrollPosition="0|0" />
+      <File id="D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E/f:AssemblyInfo.cs" caret="390" scrollPosition="0|0" />
+      <File id="EE536E15-2E62-429F-B5D0-8C3348DAA705/d:Forms/f:frmExportFields.cs" caret="0" scrollPosition="0|0" />
+      <File id="FB2115BE-6708-4DC3-8E12-4C41CFAA9A76/f:RichTextBoxEx.cs" caret="0" scrollPosition="0|0" />
+      <File id="EE536E15-2E62-429F-B5D0-8C3348DAA705/f:frmMain.cs" caret="71942" scrollPosition="0|144" />
+    </RecentFiles>
+  </EditorManager>
+  <CompletionStatisticsManager />
+</Configuration>

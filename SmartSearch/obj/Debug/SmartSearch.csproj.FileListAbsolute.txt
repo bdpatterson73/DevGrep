@@ -1,0 +1,5 @@
+C:\Source\DevGrep\SmartSearch\bin\Debug\SmartSearch.dll
+C:\Source\DevGrep\SmartSearch\bin\Debug\SmartSearch.pdb
+C:\Source\DevGrep\SmartSearch\obj\Debug\SmartSearch.csprojResolveAssemblyReference.cache
+C:\Source\DevGrep\SmartSearch\obj\Debug\SmartSearch.dll
+C:\Source\DevGrep\SmartSearch\obj\Debug\SmartSearch.pdb

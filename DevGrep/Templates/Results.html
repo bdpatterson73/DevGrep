@@ -1,0 +1,168 @@
+<html>
+<head>
+
+    <title>DevGrep Search Results</title>
+
+    <style type="text/css">
+
+        .search-results-header {
+
+        }
+
+        .search-result-table {
+
+            border: 1px solid black;
+            width: 100%;
+
+        }
+
+        .search-result-table-header-cell {
+
+            border-bottom: 1px solid black;
+            background-color: silver;
+
+        }
+
+        .search-result-name-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+
+        .search-result-type-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+
+        .search-result-folder-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+
+        .search-result-matches-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+        .search-result-size-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+        .search-result-datetime-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+        .search-result-step-description-cell {
+
+            border-bottom: 1px solid gray;
+
+        }
+
+        .search-result-step-result-cell-ok {
+
+            border-bottom: 1px solid gray;
+            background-color: green;
+
+        }
+
+        .search-result-step-result-cell-failure {
+
+            border-bottom: 1px solid gray;
+            background-color: red;
+
+        }
+
+        .search-result-step-result-cell-notperformed {
+
+            border-bottom: 1px solid gray;
+            background-color: white;
+
+
+        }
+
+        .search-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+
+        .search-result-step-row {
+
+        }
+
+        .search-result-comment-row {
+           
+        }
+
+        .search-result-step-row-altone {
+         background-color: white; 
+        }
+
+        .search-result-step-row-alttwo {
+         background-color: cadetblue; 
+        }
+
+
+        .search-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+
+        .search-results-template-div {
+            border: 0px solid black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<h1 class="search-results-header">DevGrep Search Results</h1>
+
+
+<h2 class="search-result-name"><div class="search-cast-status-box-ok">&nbsp;</div> $SEARCHCRITERIA$</h2>
+<table class="search-result-table" cellspacing="0">
+
+    <thead>
+    <tr>
+        <td class="search-result-table-header-cell">$FILENAMEHEADER$</td>
+        <td class="search-result-table-header-cell">$FILETYPEHEADER$</td>
+        <td class="search-result-table-header-cell">$FILEFOLDERHEADER$</td>
+        <td class="search-result-table-header-cell">$FILEMATCHESHEADER$</td>
+        <td class="search-result-table-header-cell">$FILESIZEHEADER$</td>
+        <td class="search-result-table-header-cell">$FILEDATETIMEHEADER$</td>
+    </tr>
+    </thead>
+    <tbody>
+        <!-- The entire contents of the following div are used as a template for results. -->
+        <div id="resultTemplateDiv" class="search-results-template-div">
+            <tr class="search-result-step-row">
+                <td class="search-result-name-cell">$FILENAME$</td>
+                <td class="search-result-type-cell">$FILETYPE$</td>
+                <td class="search-result-folder-cell">$FILEFOLDER$</td>
+                <td class="search-result-matches-cell">$FILEMATCHES$</td>
+                <td class="search-result-size-cell">$FILESIZE$</td>
+                <td class="search-result-datetime-cell">$FILEDATETIME$</td>
+            </tr>
+        </div>
+        <!--    <tr class="search-result-step-row test-result-comment-row">
+                    <td class="search-result-describe-cell" colspan="3">Describe: This is a comment</td>
+                </tr>-->
+    </tbody>
+
+
+</table>
+
+
+</body>
+</html>

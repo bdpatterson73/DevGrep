@@ -1,0 +1,37 @@
+<SmartAssemblyProject ProjectId="{bfe3804a-9f6e-4c65-bdfc-12a583ad55d2}" Version="2.0">
+    <MainAssemblyFileName>..\UpdateCheck\bin\Debug\UpdateCheck.exe</MainAssemblyFileName>
+    <FriendlyName>UpdateCheck</FriendlyName>
+    <CompanyName>Borderline Software, Inc.</CompanyName>
+    <Configuration Name="Release">
+        <Options>
+            <ExceptionReporting EmailToBeNotified="briandavidpatterson@gmail.com" ReportExceptions="1" Template="res:{SmartExceptions}.1033.dll" />
+            <FeatureUsageReporting Template="res:SmartUsageWithUIConsentFirstRun1033.dll" />
+            <StringsEncoding Encode="1" />
+            <StrongNameSigning />
+            <OtherOptimizations />
+            <Obfuscation FieldsNameMangling="2" NameMangling="2" />
+            <OtherProtections />
+            <Debugging />
+        </Options>
+        <ApplicationName>UpdateCheck</ApplicationName>
+        <Destination DestinationFileName="..\Obfuscated\UpdateCheck.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="UpdateCheck, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Ionic.Zip, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c">
+                <Merging />
+                <Embedding />
+            </Assembly>
+        </Assemblies>
+    </Configuration>
+</SmartAssemblyProject>

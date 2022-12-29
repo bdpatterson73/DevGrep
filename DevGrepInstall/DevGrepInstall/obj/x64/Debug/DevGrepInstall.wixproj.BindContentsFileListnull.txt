@@ -1,0 +1,16 @@
+../../Obfuscated/BLS.JSON.dll
+../../Obfuscated/BLS.Search.Web.dll
+../../Obfuscated/BLS.TextEditor.dll
+../../Obfuscated/DevGrep.exe
+../../Obfuscated/DevGrep.exe.Config
+../../Obfuscated/app.ico
+../../Obfuscated/DevGrepResources.dll
+../../Obfuscated/DGTe.dll
+../../Obfuscated/Patterson.Windows.Forms.dll
+../../Obfuscated/Templates/ResultsCompiled.html
+../../Obfuscated/Templates/Results.html
+../../Obfuscated/RichTextBoxEx.dll
+../../Obfuscated/Themes/SilverBlack.xml
+../../Obfuscated/SmartSearch.dll
+../../Obfuscated/UpdateCheck.exe
+../../Obfuscated/Themes/WinDefault.xml
