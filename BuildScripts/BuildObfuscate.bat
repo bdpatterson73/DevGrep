@@ -27,12 +27,12 @@ copy ..\DevGrep\bin\Debug\Templates\Results.html ..\Obfuscated\Templates
 copy ..\DevGrep\bin\Debug\Templates\ResultsCompiled.html ..\Obfuscated\Templates
 copy ..\DevGrep\bin\Debug\Themes\SilverBlack.xml ..\Obfuscated\Themes
 copy ..\DevGrep\bin\Debug\Themes\WinDefault.xml ..\Obfuscated\Themes
-signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p 10162026Abc!!!! /d "DevGrep" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" ..\Obfuscated\DevGrep.exe
-signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p 10162026Abc!!!! /d "UpdateCheck" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" ..\Obfuscated\UpdateCheck.exe
+signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p <PASSWORDHERE> /d "DevGrep" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" ..\Obfuscated\DevGrep.exe
+signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p <PASSWORDHERE> /d "UpdateCheck" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" ..\Obfuscated\UpdateCheck.exe
 echo Updating the NSIS Version string.
 VersionIncrement.exe -sn BuildInstaller.nsi ..\Obfuscated\DevGrep.exe
 "C:\Program Files (x86)\NSIS\makensis.exe" BuildInstaller.nsi
-signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p 10162026Abc!!!! /d "DevGrep Installer" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" "InstallDevGrep.exe"
+signtool.exe sign /f ./Certs/BrianPattersonOpenSourceDev.pfx /p <PASSWORDHERE> /d "DevGrep Installer" /du "http://www.borderlinesoftware.com/products/products-windows/product-devgrep" /t "http://timestamp.verisign.com/scripts/timestamp.dll" "InstallDevGrep.exe"
 echo Build WiX Installer
 rem %SystemRoot%\Microsoft.NET\Framework\v4.0.30319\msbuild.exe ..\DevGrepInstall\DevGrepInstall.sln /t:Clean,Build
 rem copy ..\DevGrepInstall\DevGrepInstall\Bin\Debug\DevGrepInstall.msi .\
