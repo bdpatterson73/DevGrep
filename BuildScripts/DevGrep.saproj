@@ -4,7 +4,7 @@
     <CompanyName>Borderline Software, Inc.</CompanyName>
     <Configuration Name="Release">
         <Options>
-            <ExceptionReporting EmailToBeNotified="briandavidpatterson@gmail.com" ReportExceptions="1" Template="res:{SmartExceptions}.1033.dll" />
+            <ExceptionReporting EmailToBeNotified="bdpatterson73@gmail.com" ReportExceptions="1" Template="res:{SmartExceptions}.1033.dll" />
             <FeatureUsageReporting ReportUsages="1" Template="res:SmartUsageWithoutUI.dll" />
             <StringsEncoding Encode="1" UseImprovedEncoding="1" />
             <StrongNameSigning />

@@ -1,7 +1,7 @@
-﻿// <file>
+// <file>
 //     <copyright see="prj:///doc/copyright.txt"/>
 //     <license see="prj:///doc/license.txt"/>
-//     <owner name="Brian Patterson" email="briandavidpatterson@gmail.com"/>
+//     <owner name="Brian Patterson" email="bdpatterson73@gmail.com"/>
 //     <version>$Revision: 2932 $</version>
 // </file>
 
