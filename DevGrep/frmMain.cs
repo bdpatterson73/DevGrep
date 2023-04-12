@@ -63,6 +63,7 @@ namespace DevGrep
         private bool doContinue = true;
         private bool _MatchCase = false;
         private bool _Subdirectories = true;
+        private bool _ignoreBinary = true;
         private string _CurrentFileName = "";
         private PersistWindowState m_windowState;
         private bool _ReplaceOperation = true;
@@ -772,7 +773,7 @@ namespace DevGrep
             this.toolBar1.Location = new System.Drawing.Point(0, 0);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.ShowToolTips = true;
-            this.toolBar1.Size = new System.Drawing.Size(736, 57);
+            this.toolBar1.Size = new System.Drawing.Size(736, 50);
             this.toolBar1.TabIndex = 0;
             this.toolBar1.Wrappable = false;
             this.toolBar1.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);
@@ -897,9 +898,9 @@ namespace DevGrep
             this.panel1.Controls.Add(this.lvFiles);
             this.panel1.Controls.Add(this.lblInfo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 57);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 312);
+            this.panel1.Size = new System.Drawing.Size(736, 319);
             this.panel1.TabIndex = 1;
             // 
             // rtbResults
@@ -907,10 +908,10 @@ namespace DevGrep
             this.rtbResults.ContextMenu = this.cmResults;
             this.rtbResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbResults.Font = new System.Drawing.Font("Courier New", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbResults.Location = new System.Drawing.Point(0, 355);
+            this.rtbResults.Location = new System.Drawing.Point(0, 243);
             this.rtbResults.Name = "rtbResults";
             this.rtbResults.ReadOnly = true;
-            this.rtbResults.Size = new System.Drawing.Size(736, 0);
+            this.rtbResults.Size = new System.Drawing.Size(736, 61);
             this.rtbResults.TabIndex = 6;
             this.rtbResults.Text = "";
             this.rtbResults.WordWrap = false;
@@ -938,17 +939,17 @@ namespace DevGrep
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter1.Location = new System.Drawing.Point(0, 351);
+            this.splitter1.Location = new System.Drawing.Point(0, 240);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(736, 4);
+            this.splitter1.Size = new System.Drawing.Size(736, 3);
             this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
             // statusBar1
             // 
-            this.statusBar1.Location = new System.Drawing.Point(0, 289);
+            this.statusBar1.Location = new System.Drawing.Point(0, 304);
             this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(736, 23);
+            this.statusBar1.Size = new System.Drawing.Size(736, 15);
             this.statusBar1.TabIndex = 4;
             // 
             // lvFiles
@@ -965,9 +966,9 @@ namespace DevGrep
             this.lvFiles.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvFiles.FullRowSelect = true;
             this.lvFiles.HideSelection = false;
-            this.lvFiles.Location = new System.Drawing.Point(0, 23);
+            this.lvFiles.Location = new System.Drawing.Point(0, 16);
             this.lvFiles.Name = "lvFiles";
-            this.lvFiles.Size = new System.Drawing.Size(736, 328);
+            this.lvFiles.Size = new System.Drawing.Size(736, 224);
             this.lvFiles.TabIndex = 1;
             this.lvFiles.UseCompatibleStateImageBehavior = false;
             this.lvFiles.View = System.Windows.Forms.View.Details;
@@ -1043,7 +1044,7 @@ namespace DevGrep
             this.lblInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblInfo.Location = new System.Drawing.Point(0, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(736, 23);
+            this.lblInfo.Size = new System.Drawing.Size(736, 16);
             this.lblInfo.TabIndex = 0;
             // 
             // pageSetupDialog1
@@ -1100,7 +1101,7 @@ namespace DevGrep
             // 
             // frmMain
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(736, 369);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolBar1);
@@ -1162,12 +1163,26 @@ namespace DevGrep
                                     Application.DoEvents();
                                     if (ExtIsInList(AllExt, fsi.Extension) == true)
                                     {
-                                        statusBar1.Text = fsi.FullName;
-                                        Application.DoEvents();
+                                       
+                                        
                                         st = new SearchTask(fsi.FullName, this._SearchText);
-                                        //ThreadPool.QueueUserWorkItem(new WaitCallback(ProcessFileSearch),st);     
-                                        ProcessFileSearch(st);
-                                        //HACK statusBar1.Text = "";
+                                        if (_ignoreBinary == true )
+                                        {
+                                            if (!BinFile.isBinary(st.TargetFile))
+                                            {
+                                                statusBar1.Text = fsi.FullName;
+                                                Application.DoEvents();
+                                                ProcessFileSearch(st);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            statusBar1.Text = fsi.FullName;
+                                            Application.DoEvents();
+                                            //ThreadPool.QueueUserWorkItem(new WaitCallback(ProcessFileSearch),st);     
+                                            ProcessFileSearch(st);
+                                            //HACK statusBar1.Text = "";
+                                        }
                                     }
                                 }
                                 catch (Exception except)
@@ -2149,6 +2164,7 @@ namespace DevGrep
                 this._SearchText = fsa.ReturnSearchText;
                 this._MatchCase = fsa.MatchCase;
                 this._Subdirectories = fsa.Subdirectories;
+                this._ignoreBinary = fsa.IgnoreBinary;
 
                 InitSearch();
                 statusBar1.Text = "";

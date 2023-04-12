@@ -37,6 +37,9 @@ namespace DevGrep.Classes
             }
         }
 
+        /// <summary>
+        /// The file name and path
+        /// </summary>
         public string SearchString
         {
             get

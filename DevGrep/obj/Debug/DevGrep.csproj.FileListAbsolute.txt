@@ -29,3 +29,4 @@ F:\Source\DevGrep\DevGrep\obj\Debug\DevGrep.pdb
 C:\source\DevGrep\DevGrep\obj\Debug\DevGrep.csproj.AssemblyReference.cache
 C:\source\DevGrep\DevGrep\obj\Debug\DevGrep.csproj.CoreCompileInputs.cache
 C:\source\DevGrep\DevGrep\obj\Debug\DevGrep.csproj.CopyComplete
+C:\Source\DevGrep\DevGrep\bin\Debug\DevGrep.exe.config

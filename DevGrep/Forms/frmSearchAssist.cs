@@ -61,6 +61,8 @@ namespace DevGrep.Forms
         private System.Windows.Forms.MenuItem mnuHexValue;
         private System.Windows.Forms.RadioButton rbText;
         private MenuItem mnuPython;
+        private CheckBox cbIgnoreBinaryFiles;
+        private Button btnOpenBinaryExtenList;
         private IContainer components;
 
         public frmSearchAssist()
@@ -120,6 +122,8 @@ namespace DevGrep.Forms
             this.rbText = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnOpenBinaryExtenList = new System.Windows.Forms.Button();
+            this.cbIgnoreBinaryFiles = new System.Windows.Forms.CheckBox();
             this.cbSubdirectories = new System.Windows.Forms.CheckBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.txtSearchLocation = new System.Windows.Forms.TextBox();
@@ -136,13 +140,13 @@ namespace DevGrep.Forms
             this.mnuVisualStudioNet = new System.Windows.Forms.MenuItem();
             this.mnuScripts = new System.Windows.Forms.MenuItem();
             this.mnuWeb = new System.Windows.Forms.MenuItem();
+            this.mnuPython = new System.Windows.Forms.MenuItem();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.mnuClear = new System.Windows.Forms.MenuItem();
             this.lbFileTypes = new System.Windows.Forms.ListBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.mnuPython = new System.Windows.Forms.MenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -153,9 +157,9 @@ namespace DevGrep.Forms
             // 
             this.groupBox1.Controls.Add(this.txtSearchText);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(13, 12);
+            this.groupBox1.Location = new System.Drawing.Point(8, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(563, 70);
+            this.groupBox1.Size = new System.Drawing.Size(352, 48);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Text";
@@ -163,9 +167,9 @@ namespace DevGrep.Forms
             // txtSearchText
             // 
             this.txtSearchText.ContextMenu = this.cmRegEx;
-            this.txtSearchText.Location = new System.Drawing.Point(13, 23);
+            this.txtSearchText.Location = new System.Drawing.Point(8, 16);
             this.txtSearchText.Name = "txtSearchText";
-            this.txtSearchText.Size = new System.Drawing.Size(537, 26);
+            this.txtSearchText.Size = new System.Drawing.Size(336, 20);
             this.txtSearchText.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtSearchText, "Right click for more options.");
             // 
@@ -261,9 +265,9 @@ namespace DevGrep.Forms
             this.groupBox2.Controls.Add(this.cbMatchCase);
             this.groupBox2.Controls.Add(this.rbText);
             this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 94);
+            this.groupBox2.Location = new System.Drawing.Point(8, 64);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(563, 105);
+            this.groupBox2.Size = new System.Drawing.Size(352, 72);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search Type";
@@ -272,9 +276,9 @@ namespace DevGrep.Forms
             // 
             this.checkBox2.Enabled = false;
             this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.checkBox2.Location = new System.Drawing.Point(320, 58);
+            this.checkBox2.Location = new System.Drawing.Point(200, 40);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(230, 24);
+            this.checkBox2.Size = new System.Drawing.Size(144, 16);
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Find whole word only";
             // 
@@ -282,18 +286,18 @@ namespace DevGrep.Forms
             // 
             this.cbMatchCase.Enabled = false;
             this.cbMatchCase.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbMatchCase.Location = new System.Drawing.Point(320, 23);
+            this.cbMatchCase.Location = new System.Drawing.Point(200, 16);
             this.cbMatchCase.Name = "cbMatchCase";
-            this.cbMatchCase.Size = new System.Drawing.Size(218, 24);
+            this.cbMatchCase.Size = new System.Drawing.Size(136, 16);
             this.cbMatchCase.TabIndex = 2;
             this.cbMatchCase.Text = "Match Case";
             // 
             // rbText
             // 
             this.rbText.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.rbText.Location = new System.Drawing.Point(13, 58);
+            this.rbText.Location = new System.Drawing.Point(8, 40);
             this.rbText.Name = "rbText";
-            this.rbText.Size = new System.Drawing.Size(294, 36);
+            this.rbText.Size = new System.Drawing.Size(184, 24);
             this.rbText.TabIndex = 1;
             this.rbText.Text = "Text";
             // 
@@ -301,40 +305,63 @@ namespace DevGrep.Forms
             // 
             this.radioButton1.Checked = true;
             this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.radioButton1.Location = new System.Drawing.Point(13, 23);
+            this.radioButton1.Location = new System.Drawing.Point(8, 16);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(294, 35);
+            this.radioButton1.Size = new System.Drawing.Size(184, 24);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Normal (regular expressions)";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnOpenBinaryExtenList);
+            this.groupBox3.Controls.Add(this.cbIgnoreBinaryFiles);
             this.groupBox3.Controls.Add(this.cbSubdirectories);
             this.groupBox3.Controls.Add(this.btnBrowse);
             this.groupBox3.Controls.Add(this.txtSearchLocation);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox3.Location = new System.Drawing.Point(13, 210);
+            this.groupBox3.Location = new System.Drawing.Point(8, 144);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(563, 106);
+            this.groupBox3.Size = new System.Drawing.Size(352, 72);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Search Location";
             // 
+            // btnOpenBinaryExtenList
+            // 
+            this.btnOpenBinaryExtenList.Location = new System.Drawing.Point(286, 43);
+            this.btnOpenBinaryExtenList.Name = "btnOpenBinaryExtenList";
+            this.btnOpenBinaryExtenList.Size = new System.Drawing.Size(24, 23);
+            this.btnOpenBinaryExtenList.TabIndex = 6;
+            this.btnOpenBinaryExtenList.Text = "...";
+            this.toolTip1.SetToolTip(this.btnOpenBinaryExtenList, "Open binary file extension list");
+            this.btnOpenBinaryExtenList.UseVisualStyleBackColor = true;
+            this.btnOpenBinaryExtenList.Visible = false;
+            // 
+            // cbIgnoreBinaryFiles
+            // 
+            this.cbIgnoreBinaryFiles.AutoSize = true;
+            this.cbIgnoreBinaryFiles.Location = new System.Drawing.Point(168, 47);
+            this.cbIgnoreBinaryFiles.Name = "cbIgnoreBinaryFiles";
+            this.cbIgnoreBinaryFiles.Size = new System.Drawing.Size(112, 17);
+            this.cbIgnoreBinaryFiles.TabIndex = 5;
+            this.cbIgnoreBinaryFiles.Text = "Ignore Binary Files";
+            this.cbIgnoreBinaryFiles.UseVisualStyleBackColor = true;
+            // 
             // cbSubdirectories
             // 
-            this.cbSubdirectories.Location = new System.Drawing.Point(13, 58);
+            this.cbSubdirectories.Location = new System.Drawing.Point(8, 47);
             this.cbSubdirectories.Name = "cbSubdirectories";
-            this.cbSubdirectories.Size = new System.Drawing.Size(422, 24);
+            this.cbSubdirectories.Size = new System.Drawing.Size(144, 16);
             this.cbSubdirectories.TabIndex = 4;
             this.cbSubdirectories.Text = "Include Subdirectories";
             // 
             // btnBrowse
             // 
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnBrowse.Location = new System.Drawing.Point(486, 23);
+            this.btnBrowse.Location = new System.Drawing.Point(304, 16);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(64, 30);
+            this.btnBrowse.Size = new System.Drawing.Size(40, 20);
             this.btnBrowse.TabIndex = 3;
             this.btnBrowse.Text = "...";
             this.toolTip1.SetToolTip(this.btnBrowse, "Browse");
@@ -342,9 +369,9 @@ namespace DevGrep.Forms
             // 
             // txtSearchLocation
             // 
-            this.txtSearchLocation.Location = new System.Drawing.Point(13, 23);
+            this.txtSearchLocation.Location = new System.Drawing.Point(8, 16);
             this.txtSearchLocation.Name = "txtSearchLocation";
-            this.txtSearchLocation.Size = new System.Drawing.Size(461, 26);
+            this.txtSearchLocation.Size = new System.Drawing.Size(288, 20);
             this.txtSearchLocation.TabIndex = 2;
             // 
             // groupBox4
@@ -356,9 +383,9 @@ namespace DevGrep.Forms
             this.groupBox4.Controls.Add(this.lbSelectedTypes);
             this.groupBox4.Controls.Add(this.lbFileTypes);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox4.Location = new System.Drawing.Point(13, 339);
+            this.groupBox4.Location = new System.Drawing.Point(8, 232);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(563, 211);
+            this.groupBox4.Size = new System.Drawing.Size(352, 144);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "File Types";
@@ -366,9 +393,9 @@ namespace DevGrep.Forms
             // btnDeselectExt
             // 
             this.btnDeselectExt.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnDeselectExt.Location = new System.Drawing.Point(243, 94);
+            this.btnDeselectExt.Location = new System.Drawing.Point(152, 64);
             this.btnDeselectExt.Name = "btnDeselectExt";
-            this.btnDeselectExt.Size = new System.Drawing.Size(77, 46);
+            this.btnDeselectExt.Size = new System.Drawing.Size(48, 32);
             this.btnDeselectExt.TabIndex = 5;
             this.btnDeselectExt.Text = "<";
             this.toolTip1.SetToolTip(this.btnDeselectExt, "Remove file type from list");
@@ -377,9 +404,9 @@ namespace DevGrep.Forms
             // btnSelectExt
             // 
             this.btnSelectExt.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSelectExt.Location = new System.Drawing.Point(243, 35);
+            this.btnSelectExt.Location = new System.Drawing.Point(152, 24);
             this.btnSelectExt.Name = "btnSelectExt";
-            this.btnSelectExt.Size = new System.Drawing.Size(77, 47);
+            this.btnSelectExt.Size = new System.Drawing.Size(48, 32);
             this.btnSelectExt.TabIndex = 4;
             this.btnSelectExt.Text = ">";
             this.toolTip1.SetToolTip(this.btnSelectExt, "Add file type to selected list");
@@ -388,9 +415,9 @@ namespace DevGrep.Forms
             // btnAdd
             // 
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAdd.Location = new System.Drawing.Point(435, 164);
+            this.btnAdd.Location = new System.Drawing.Point(272, 112);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(115, 35);
+            this.btnAdd.Size = new System.Drawing.Size(72, 24);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "&Add";
             this.toolTip1.SetToolTip(this.btnAdd, "Add custom file type to list");
@@ -398,19 +425,18 @@ namespace DevGrep.Forms
             // 
             // txtAdd
             // 
-            this.txtAdd.Location = new System.Drawing.Point(13, 167);
+            this.txtAdd.Location = new System.Drawing.Point(8, 114);
             this.txtAdd.Name = "txtAdd";
-            this.txtAdd.Size = new System.Drawing.Size(422, 26);
+            this.txtAdd.Size = new System.Drawing.Size(264, 20);
             this.txtAdd.TabIndex = 2;
             this.toolTip1.SetToolTip(this.txtAdd, "Add custom file type (extension) here");
             // 
             // lbSelectedTypes
             // 
             this.lbSelectedTypes.ContextMenu = this.cmSelectedTypes;
-            this.lbSelectedTypes.ItemHeight = 20;
-            this.lbSelectedTypes.Location = new System.Drawing.Point(320, 23);
+            this.lbSelectedTypes.Location = new System.Drawing.Point(200, 16);
             this.lbSelectedTypes.Name = "lbSelectedTypes";
-            this.lbSelectedTypes.Size = new System.Drawing.Size(230, 124);
+            this.lbSelectedTypes.Size = new System.Drawing.Size(144, 82);
             this.lbSelectedTypes.Sorted = true;
             this.lbSelectedTypes.TabIndex = 1;
             this.toolTip1.SetToolTip(this.lbSelectedTypes, "Right click here for more options");
@@ -464,6 +490,12 @@ namespace DevGrep.Forms
             this.mnuWeb.Text = "Web";
             this.mnuWeb.Click += new System.EventHandler(this.mnuWeb_Click);
             // 
+            // mnuPython
+            // 
+            this.mnuPython.Index = 4;
+            this.mnuPython.Text = "Python";
+            this.mnuPython.Click += new System.EventHandler(this.mnuPython_Click);
+            // 
             // menuItem1
             // 
             this.menuItem1.Index = 5;
@@ -477,19 +509,18 @@ namespace DevGrep.Forms
             // 
             // lbFileTypes
             // 
-            this.lbFileTypes.ItemHeight = 20;
-            this.lbFileTypes.Location = new System.Drawing.Point(13, 23);
+            this.lbFileTypes.Location = new System.Drawing.Point(8, 16);
             this.lbFileTypes.Name = "lbFileTypes";
             this.lbFileTypes.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbFileTypes.Size = new System.Drawing.Size(230, 124);
+            this.lbFileTypes.Size = new System.Drawing.Size(144, 82);
             this.lbFileTypes.TabIndex = 0;
             // 
             // btnOK
             // 
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnOK.Location = new System.Drawing.Point(435, 561);
+            this.btnOK.Location = new System.Drawing.Point(272, 384);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(141, 59);
+            this.btnOK.Size = new System.Drawing.Size(88, 40);
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "&OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -498,25 +529,19 @@ namespace DevGrep.Forms
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancel.Location = new System.Drawing.Point(282, 561);
+            this.btnCancel.Location = new System.Drawing.Point(176, 384);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(140, 59);
+            this.btnCancel.Size = new System.Drawing.Size(88, 40);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // mnuPython
-            // 
-            this.mnuPython.Index = 4;
-            this.mnuPython.Text = "Python";
-            this.mnuPython.Click += new System.EventHandler(this.mnuPython_Click);
-            // 
             // frmSearchAssist
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(587, 631);
+            this.ClientSize = new System.Drawing.Size(376, 438);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.groupBox4);
@@ -551,6 +576,7 @@ namespace DevGrep.Forms
             txtSearchLocation.Text = Win32Registry.HKCUReadKey(@"Software\DevGrep\Pref\", "LastSearchLocation");
             txtSearchText.Text = Win32Registry.HKCUReadKey(@"Software\DevGrep\Pref\", "LastText");
             cbSubdirectories.Checked = Win32Registry.HKCUReadKey(@"Software\DevGrep\Pref\", "Subdirectories").ToUpper() == "TRUE" ? true : false;
+            cbIgnoreBinaryFiles.Checked = Win32Registry.HKCUReadKey(@"Software\DevGrep\Pref\", "IgnoreBinary").ToUpper() == "TRUE" ? true : false;
             AddExtensionList(Win32Registry.HKCUReadKey(@"Software\DevGrep\Pref\", "ExtList"));
             InitFileTypes();
         }
@@ -652,6 +678,7 @@ namespace DevGrep.Forms
                 Win32Registry.HKCUWriteKey(@"Software\DevGrep\Pref\", "LastText", txtSearchText.Text);
                 Win32Registry.HKCUWriteKey(@"Software\DevGrep\Pref\", "ExtList", ExtensionList());
                 Win32Registry.HKCUWriteKey(@"Software\DevGrep\Pref\", "Subdirectories", cbSubdirectories.Checked.ToString());
+                Win32Registry.HKCUWriteKey(@"Software\DevGrep\Pref\", "IgnoreBinary", cbIgnoreBinaryFiles.Checked.ToString());
                 if (txtSearchLocation.Text.Trim().Length != 0)
                 {
                     if (lbSelectedTypes.Items.Count > 0)
@@ -660,6 +687,7 @@ namespace DevGrep.Forms
                         this._ReturnPath = txtSearchLocation.Text;
                         this._ReturnExtensions = ExtensionList();
                         this._IncludeSubdirectories = cbSubdirectories.Checked;
+                        this._IgnoreBinary = cbIgnoreBinaryFiles.Checked;
                         this.DialogResult = DialogResult.OK;
                         this.Close();
                     }
@@ -766,6 +794,14 @@ namespace DevGrep.Forms
             }
         }
 
+        private bool _IgnoreBinary;
+        public bool IgnoreBinary
+        {
+            get
+            {
+                return _IgnoreBinary;
+            }
+        }
         private void ConditionalListBoxAdd(ref ListBox ctrl, string ToAdd)
         {
             bool found = false;

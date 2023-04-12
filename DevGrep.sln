@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBoxEx", "RichTextBo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGTe", "DGTe\DGTe.csproj", "{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DevGrep Setup", "DevGrep Setup\DevGrep Setup.vdproj", "{2A0654AE-5D7D-417B-941C-DE050AF4AE85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,17 +28,19 @@ Global
 		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3573E5F-3FB8-49E3-9B2D-4CCAC74CFF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0654AE-5D7D-417B-941C-DE050AF4AE85}.Debug|Any CPU.ActiveCfg = Debug
+		{2A0654AE-5D7D-417B-941C-DE050AF4AE85}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SZOpenFile = false
-		SZOpenFolder = false
-		SZPath = C:\Source\DevGrep.zip
-		SZFullPathInfo = false
-		SZModifiedFiles = false
-		SZIncludeMisc = false
 		SolutionGuid = {DEFE674B-F6C7-47AB-BCD9-26EBDF70B706}
+		SZIncludeMisc = false
+		SZModifiedFiles = false
+		SZFullPathInfo = false
+		SZPath = C:\Source\DevGrep.zip
+		SZOpenFolder = false
+		SZOpenFile = false
 	EndGlobalSection
 EndGlobal
