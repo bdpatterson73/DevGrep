@@ -23,3 +23,4 @@ C:\source\DevGrep\DevGrep\obj\Release\DevGrep.exe.manifest
 C:\source\DevGrep\DevGrep\obj\Release\DevGrep.application
 C:\source\DevGrep\DevGrep\obj\Release\DevGrep.csproj.CopyComplete
 C:\source\DevGrep\DevGrep\obj\Release\DevGrep.exe
+C:\Source\DevGrep\DevGrep\bin\Release\DevGrep.exe.config

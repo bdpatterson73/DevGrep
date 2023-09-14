@@ -341,7 +341,6 @@ namespace DevGrep
             this.tbResults = new System.Windows.Forms.ToolBarButton();
             this.ilToolbar = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rtbResults = new RichTextBoxEx.RichTextBoxEx();
             this.cmResults = new System.Windows.Forms.ContextMenu();
             this.mnuViewFile = new System.Windows.Forms.MenuItem();
             this.mnuViewLine = new System.Windows.Forms.MenuItem();
@@ -364,6 +363,7 @@ namespace DevGrep
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.rtbResults = new RichTextBoxEx.RichTextBoxEx();
             this.tn = new DevGrep.Classes.TaskbarNotifier();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -773,7 +773,7 @@ namespace DevGrep
             this.toolBar1.Location = new System.Drawing.Point(0, 0);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.ShowToolTips = true;
-            this.toolBar1.Size = new System.Drawing.Size(736, 50);
+            this.toolBar1.Size = new System.Drawing.Size(1009, 50);
             this.toolBar1.TabIndex = 0;
             this.toolBar1.Wrappable = false;
             this.toolBar1.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);
@@ -900,22 +900,8 @@ namespace DevGrep
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 319);
+            this.panel1.Size = new System.Drawing.Size(1009, 485);
             this.panel1.TabIndex = 1;
-            // 
-            // rtbResults
-            // 
-            this.rtbResults.ContextMenu = this.cmResults;
-            this.rtbResults.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbResults.Font = new System.Drawing.Font("Courier New", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbResults.Location = new System.Drawing.Point(0, 243);
-            this.rtbResults.Name = "rtbResults";
-            this.rtbResults.ReadOnly = true;
-            this.rtbResults.Size = new System.Drawing.Size(736, 61);
-            this.rtbResults.TabIndex = 6;
-            this.rtbResults.Text = "";
-            this.rtbResults.WordWrap = false;
-            this.rtbResults.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rtbResults_MouseUp);
             // 
             // cmResults
             // 
@@ -941,15 +927,15 @@ namespace DevGrep
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter1.Location = new System.Drawing.Point(0, 240);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(736, 3);
+            this.splitter1.Size = new System.Drawing.Size(1009, 3);
             this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
             // statusBar1
             // 
-            this.statusBar1.Location = new System.Drawing.Point(0, 304);
+            this.statusBar1.Location = new System.Drawing.Point(0, 470);
             this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(736, 15);
+            this.statusBar1.Size = new System.Drawing.Size(1009, 15);
             this.statusBar1.TabIndex = 4;
             // 
             // lvFiles
@@ -968,7 +954,7 @@ namespace DevGrep
             this.lvFiles.HideSelection = false;
             this.lvFiles.Location = new System.Drawing.Point(0, 16);
             this.lvFiles.Name = "lvFiles";
-            this.lvFiles.Size = new System.Drawing.Size(736, 224);
+            this.lvFiles.Size = new System.Drawing.Size(1009, 224);
             this.lvFiles.TabIndex = 1;
             this.lvFiles.UseCompatibleStateImageBehavior = false;
             this.lvFiles.View = System.Windows.Forms.View.Details;
@@ -1044,7 +1030,7 @@ namespace DevGrep
             this.lblInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblInfo.Location = new System.Drawing.Point(0, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(736, 16);
+            this.lblInfo.Size = new System.Drawing.Size(1009, 16);
             this.lblInfo.TabIndex = 0;
             // 
             // pageSetupDialog1
@@ -1072,6 +1058,20 @@ namespace DevGrep
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.ShowIcon = false;
             this.printPreviewDialog1.Visible = false;
+            // 
+            // rtbResults
+            // 
+            this.rtbResults.ContextMenu = this.cmResults;
+            this.rtbResults.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbResults.Font = new System.Drawing.Font("Courier New", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbResults.Location = new System.Drawing.Point(0, 243);
+            this.rtbResults.Name = "rtbResults";
+            this.rtbResults.ReadOnly = true;
+            this.rtbResults.Size = new System.Drawing.Size(1009, 227);
+            this.rtbResults.TabIndex = 6;
+            this.rtbResults.Text = "";
+            this.rtbResults.WordWrap = false;
+            this.rtbResults.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rtbResults_MouseUp);
             // 
             // tn
             // 
@@ -1102,7 +1102,7 @@ namespace DevGrep
             // frmMain
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(736, 369);
+            this.ClientSize = new System.Drawing.Size(1009, 535);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolBar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1245,7 +1245,7 @@ namespace DevGrep
                 {
                     return true;
                 }
-                if (eachExt.Equals(thisExt) == true)
+                if (eachExt.Equals(thisExt,StringComparison.OrdinalIgnoreCase) == true)
                 {
                     return true;
                 }
@@ -1325,7 +1325,7 @@ namespace DevGrep
                         lvi.SubItems.Add(Path.GetDirectoryName(searchTask.TargetFile));
                         lvi.SubItems.Add(searchTask.MatchesFound.ToString());
                         lvi.SubItems.Add(fi.Length.ToString("#,###"));
-                        lvi.SubItems.Add(fi.CreationTime.ToString());
+                        lvi.SubItems.Add(fi.LastWriteTime.ToString());
                         lvi.Tag = searchTask;
                         lock (lvFiles)
                         {
@@ -1751,7 +1751,7 @@ namespace DevGrep
         /// <param name="e">EventArgs</param>
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("by Brian D. Patterson (c) 2005-2023");
+            MessageBox.Show("Borderline Software, Inc. (c) 2010-2016\nhttp://www.borderlinesoftware.com\n(309) 863-5572");
         }
         #endregion
 
